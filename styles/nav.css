@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #fff;
+    width: 100%;
+}
+
+nav img {
+    height: 12vh;
+    margin: 10px;
+}
+

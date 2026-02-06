@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsoDiario - inicio</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <img src="imgs/menu-hamburguesa.svg" alt="" class="i menu-hamburguesa">
+        </ul>
+        <ul>
+            <div class="logo">
+                <a href=""><p>PulsoDiario</p><img src="imgs/logo.svg" alt="" class="i logo"></a>
+            </div>
+        </ul>
+        <ul>
+            <a href=""><img src="imgs/usuario.svg" alt="" class="i usuario"></a>
+        </ul>
+    </nav>
+
+    <div class="contenedor-inicio">
+
+        <div class="contenedor-titulo">
+            <h2>Tus habitos</h2>
+        </div>
+
+        <div class="cont-nuevo-habito">
+
+        <div id="agregarNuevoHab" class="cont nuevo-habito-opc">
+            <h1>Agregar un habito</h1>
+            <button id="btn-nuevo-hab">Comenzar</button>
+        </div>
+
+        <div id="nombreHab" class="cont nom-nuev-habito">
+            <form id="formNombre" action="">
+                <label for="opcion-nombre">Ingresa el nombre</label>
+                <input id="opcion-nombre" name="nombreHabito" type="text" placeholder="">
+                <button type="submit">Siguiente</button>
+            </form>
+        </div>
+
+        <div id="progresoHab" class="cont espe-nuev-habito">
+            <form action="">
+                <div class="menu-progreso">
+                    <div class="select">
+                        <label for="opcion-progreso">Como queres contabilizar tu progreso?</label>
+                        <input id="opcion-progreso" type="text" placeholder="Elegí una opción" readonly>
+                            <ul class="options">
+                                <li>Diario</li>
+                                <li>Semanal</li>
+                                <li>Mensual</li>
+                            </ul>
+                    </div>
+                    <button type="submit">Agregar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="cont-estadisticas">
+        <p>Cantidad de habitos</p>
+        <p>0</p>
+    </div>
+
+    </div>
+
+    <script src="scripts/input-opciones.js"></script>
+    <script src="scripts/agregar-hab.js"></script>
+
+</body>
+</html>
