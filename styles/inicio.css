@@ -59,12 +59,28 @@
 
 /* Cantidad de habitos */
 
-.cont-estadisticas {
+.habitos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 40vh;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.estadisticas {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    width: 20%;
+    height: 30vh;
+}
+
+.habito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
     height: 30vh;
 }

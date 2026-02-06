@@ -25,10 +25,6 @@
 
     <div class="contenedor-inicio">
 
-        <div class="contenedor-titulo">
-            <h2>Tus habitos</h2>
-        </div>
-
         <div class="cont-nuevo-habito">
 
         <div id="agregarNuevoHab" class="cont nuevo-habito-opc">
@@ -45,11 +41,11 @@
         </div>
 
         <div id="progresoHab" class="cont espe-nuev-habito">
-            <form action="">
+            <form id="formProgreso" action="">
                 <div class="menu-progreso">
                     <div class="select">
                         <label for="opcion-progreso">Como queres contabilizar tu progreso?</label>
-                        <input id="opcion-progreso" type="text" placeholder="Elegí una opción" readonly>
+                        <input name="progreso" id="opcion-progreso" type="text" placeholder="Elegí una opción" readonly>
                             <ul class="options">
                                 <li>Diario</li>
                                 <li>Semanal</li>
@@ -63,9 +59,17 @@
 
     </div>
 
-    <div class="cont-estadisticas">
+    <div class="cont habitos">
+        <div id="contHabitos" class="cont habito">
+            <p>Tus habitos</p>
+            <div id="habitosAgregados" class="habitos-agregados"></div>
+        </div>
+
+        <div class="cont estadisticas">
         <p>Cantidad de habitos</p>
-        <p>0</p>
+        <p id="ContEstadHab">0</p>
+    </div>
+
     </div>
 
     </div>
