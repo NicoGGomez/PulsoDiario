@@ -9,6 +9,8 @@
 @import url('input-opciones.css');
 @import url('inicio.css');
 
+@import url('habito.css');
+
 .quicksand {
   font-family: "Quicksand";
   font-optical-sizing: auto;

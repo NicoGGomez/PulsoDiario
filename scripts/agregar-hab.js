@@ -13,8 +13,7 @@ function agregarHabito(nombre, opcionProgreso) {
   const div = document.createElement('a');
   div.classList.add('nuevo-hab');
   div.textContent = `${nombre} - ${opcionProgreso}`;
-  div.href = `${nombre}.html`;
-
+  div.href = `habito.html?nombre=${encodeURIComponent(nombre)}&progreso=${encodeURIComponent(opcionProgreso)}`;
   
   cantHab++
   estadHab.textContent = cantHab

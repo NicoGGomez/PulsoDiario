@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsoDiario - <p id="tituloHabito"></p></title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <img src="imgs/menu-hamburguesa.svg" alt="" class="i menu-hamburguesa">
+        </ul>
+        <ul>
+            <div class="logo">
+                <a href="index.html"><p>PulsoDiario</p><img src="imgs/logo.svg" alt="" class="i logo"></a>
+            </div>
+        </ul>
+        <ul>
+            <a href=""><img src="imgs/usuario.svg" alt="" class="i usuario"></a>
+        </ul>
+    </nav>
+
+    <h1 id="tituloHabito"></h1>
+    <p id="tipoProgreso"></p>
+
+    <div class="contenedor-general-habito">
+
+        <div class="informacion">
+            <div id="agregarInformacion" class="cont info">
+            <p>Agregar observaciones</p>
+            <button id="btn-nuevo-hab">agregar</button>
+        </div>
+        </div>
+
+        <div class="contenedor-informacion">
+            <div class="calendario" id="calendario">
+                <p id="mes"></p>
+            </div>
+
+        <canvas id="ejeProgreso" width="300" height="300"></canvas>
+        </div>
+
+    </div>
+
+
+    <script src="scripts/calendario.js"></script>
+    <script src="scripts/habito.js"></script>
+
+</body>
+</html>
