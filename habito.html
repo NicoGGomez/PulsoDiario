@@ -9,9 +9,10 @@
 </head>
 <body>
 
-    <nav>
+    <div class="contenedor-nav">
+        <nav>
         <ul>
-            <img src="imgs/menu-hamburguesa.svg" alt="" class="i menu-hamburguesa">
+            <img src="imgs/menu-hamburguesa.svg" alt="" class="i menu-hamburguesa" id="btnMenuHamb">
         </ul>
         <ul>
             <div class="logo">
@@ -22,6 +23,10 @@
             <a href=""><img src="imgs/usuario.svg" alt="" class="i usuario"></a>
         </ul>
     </nav>
+
+    <div id="menuHamburguesaCe" class="menu-hamburguesa-cerrado">
+    </div>
+    </div>
 
     <h1 id="tituloHabito"></h1>
     <p id="tipoProgreso"></p>
@@ -48,6 +53,7 @@
 
     <script src="scripts/calendario.js"></script>
     <script src="scripts/habito.js"></script>
+    <script src="scripts/menu-hanmburguesa.js"></script>
 
 </body>
 </html>

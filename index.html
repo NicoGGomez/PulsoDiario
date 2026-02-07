@@ -9,9 +9,10 @@
 </head>
 <body>
     
-    <nav>
+    <div class="contenedor-nav">
+        <nav>
         <ul>
-            <img src="imgs/menu-hamburguesa.svg" alt="" class="i menu-hamburguesa">
+            <img src="imgs/menu-hamburguesa.svg" alt="" class="i menu-hamburguesa" id="btnMenuHamb">
         </ul>
         <ul>
             <div class="logo">
@@ -23,29 +24,33 @@
         </ul>
     </nav>
 
+    <div id="menuHamburguesaCe" class="menu-hamburguesa-cerrado">
+    </div>
+    </div>
+
     <div class="contenedor-inicio">
 
         <div class="cont-nuevo-habito">
 
-        <div id="agregarNuevoHab" class="cont nuevo-habito-opc">
+        <div id="agregarNuevoHab" class="nuevo-habito-opc">
             <h1>Agregar un habito</h1>
             <button id="btn-nuevo-hab">Comenzar</button>
         </div>
 
-        <div id="nombreHab" class="cont nom-nuev-habito">
+        <div id="nombreHab" class="nom-nuev-habito">
             <form id="formNombre" class="menu-nombre" action="">
                 <label for="opcion-nombre">Ingresa el nombre</label>
-                <input id="opcion-nombre" name="nombreHabito" type="text" placeholder="">
+                <input id="opcion-nombre" name="nombreHabito" type="text" placeholder="" required>
                 <button type="submit">Siguiente</button>
             </form>
         </div>
 
-        <div id="progresoHab" class="cont espe-nuev-habito">
+        <div id="progresoHab" class="espe-nuev-habito">
             <form id="formProgreso" action="">
                 <div class="menu-progreso">
                     <div class="select">
                         <label for="opcion-progreso">Como queres contabilizar tu progreso?</label>
-                        <input name="progreso" id="opcion-progreso" type="text" placeholder="Elegí una opción" readonly>
+                        <input name="progreso" id="opcion-progreso" type="text" placeholder="Elegí una opción" readonly required>
                             <ul class="options">
                                 <li>Diario</li>
                                 <li>Semanal</li>
@@ -59,7 +64,7 @@
 
     </div>
 
-    <div class="cont habitos">
+    <div class="habitos">
         <div id="contHabitos" class="cont habito">
             <p>Tus habitos</p>
             <div id="habitosAgregados" class="habitos-agregados"></div>
@@ -76,6 +81,7 @@
 
     <script src="scripts/input-opciones.js"></script>
     <script src="scripts/agregar-hab.js"></script>
+    <script src="scripts/menu-hanmburguesa.js"></script>
 
 </body>
 </html>

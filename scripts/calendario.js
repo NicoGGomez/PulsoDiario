@@ -27,12 +27,12 @@ for (let dia = 1; dia <= diasMes; dia++) {
   div.textContent = dia;
 
   // hoy
-  if (dia === hoy.getDate()) {
-    estadoDias[dia] = true;
-    div.classList.add('activo');
-  } else {
-    estadoDias[dia] = false;
-  }
+  // if (dia === hoy.getDate()) {
+  // //   estadoDias[dia] = true;
+  // //   div.classList.add('activo');
+  // // } else {
+  // //   estadoDias[dia] = false;
+  // // }
 
   div.addEventListener('click', () => {
     estadoDias[dia] = !estadoDias[dia];
